@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Outfit-Variablefont';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit-Variablefont';
+}
+
+img {
+    max-width: 70%; 
+    height: auto;
+    margin: 30px auto;
+    display: block; 
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.recipe {
+    margin-left: 40px;
+}
+
+.preparation {
+    font-family: 'Outfit-Variablefont';
+    background-color: rgb(255, 245, 245);
+    margin: 25px;
+    border-radius: 20px;
+    padding: 3px 0 0 30px;
+}
+
+.border {
+    border-bottom: 1px solid #666;
+    margin: 50px;
+}
+
+h1, h2 {
+    font-family: 'young-serif';
+}
+
+h3, h2 {
+    color: rgb(124, 0, 72);
+    margin: 20px 40px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+li {
+    margin: 0 0 13px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 12px 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+} 
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    .recipe, .preparation, .instructions, .nutrition {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        margin: 10px;
+        font-size: 1.5em;
+    }
+
+    ul, li {
+        margin-left: 20px;
+    }
+
+    table {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    li {
+        margin-left: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
